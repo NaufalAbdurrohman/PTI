@@ -6,6 +6,12 @@ def crange(a, b):
 def printnln(a):
   print(a, end="")
 
+def fib(a):
+  if a <= 2:
+    return 1
+  else:
+    return fib(a-1)+fib(a-2)   
+
 #SOAL 1
 # 1,1,2,3,5,8,13,21
 
@@ -52,24 +58,69 @@ def printnln(a):
 # DAN UNTUK MENCARI SEBUAH KPK KITA MENGGUNAKAN ANGKA YANG TELAH DI TENTUKAN YAITU 120 DAN 36 DAN DIBAGI DENGAN HASIL DARI FPB YAITU 12 DAN JADINYA ADALAH 360
 
 #SOAL 4
-for y in crange(1,9):
-  for x in crange(1,9):
-    if x == y: 
-      g = x * 2 - 1
-      printnln(g)
-    elif x == 9-(y-1):
-      n = x * 2 - 2
-      printnln(n)
-    elif x < y and x > 9-(y-1):
-      printnln("C")
-    elif x > y and x < 9-(y-1):
-      printnln("A")
-    elif x < y and x < 9-(y-1):
-      printnln("D")
-    elif x > y and x > 9-(y-1):
-      printnln("B")
-    else:
-      printnln(" ")
-  print()          
+# for y in crange(1,9):
+#   for x in crange(1,9):
+#     if x == y: 
+#       g = x * 2 - 1
+#       printnln(g)
+#     elif x == 9-(y-1):
+#       n = x * 2 - 2
+#       printnln(n)
+#     elif x < y and x > 9-(y-1):
+#       printnln("C")
+#     elif x > y and x < 9-(y-1):
+#       printnln("A")
+#     elif x < y and x < 9-(y-1):
+#       printnln("D")
+#     elif x > y and x > 9-(y-1):
+#       printnln("B")
+#     else:
+#       printnln(" ")
+#   print()          
 
+#SOAL 5
+for y in crange(-4, 4):
+  for x in crange(-4, 4):
+    ax = abs(x)
+    ay = abs(y)
+    r = ax if ax > ay else ay
+    r = 4 - r + 1
+    printnln(fib(r))
+  print()  
 
+#SOAL 6
+# for y in crange(-4, 4):
+#   for x in crange(-4, 4):
+#     n = abs(x) if abs(x) > abs(y) else abs(y)
+#     n = 4 - n + 1
+#     if n % 2 == 0:
+#      printnln(" ")
+#     else:
+#       printnln(n)
+#   print()  
+
+#SOAL 7
+# for y in crange(-4, 4):
+#   for x in crange(-4, 4):
+#     n = abs(x) if abs(x) > abs(y) else abs(y)
+#     n = 4 - n + 1
+#     if n % 2 == 0:
+#      printnln(" ")
+#     else:
+#       c = n // 2 + 1
+#       printnln(fib(c))
+#   print()  
+
+#SOAL 8
+# alph = "ABC"
+# for y in crange(-4, 4):
+#   for x in crange(-4, 4):
+#     n = abs(x) if abs(x) > abs(y) else abs(y)
+#     n = 4 - n + 1
+#     if n % 2 == 0:
+#       i = n // 2 - 1
+#       printnln(alph[i])
+#     else:
+#       c = n // 2 + 1
+#       printnln(fib(c))
+#   print()  
