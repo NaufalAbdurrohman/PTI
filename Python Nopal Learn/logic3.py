@@ -89,38 +89,38 @@ for y in crange(-4, 4):
   print()  
 
 #SOAL 6
-# for y in crange(-4, 4):
-#   for x in crange(-4, 4):
-#     n = abs(x) if abs(x) > abs(y) else abs(y)
-#     n = 4 - n + 1
-#     if n % 2 == 0:
-#      printnln(" ")
-#     else:
-#       printnln(n)
-#   print()  
+for y in crange(-4, 4):
+  for x in crange(-4, 4):
+    n = abs(x) if abs(x) > abs(y) else abs(y)
+    n = 4 - n + 1
+    if n % 2 == 0:
+     printnln(" ")
+    else:
+      printnln(n)
+  print()  
 
 #SOAL 7
-# for y in crange(-4, 4):
-#   for x in crange(-4, 4):
-#     n = abs(x) if abs(x) > abs(y) else abs(y)
-#     n = 4 - n + 1
-#     if n % 2 == 0:
-#      printnln(" ")
-#     else:
-#       c = n // 2 + 1
-#       printnln(fib(c))
-#   print()  
+for y in crange(-4, 4):
+  for x in crange(-4, 4):
+    n = abs(x) if abs(x) > abs(y) else abs(y)
+    n = 4 - n + 1
+    if n % 2 == 0:
+     printnln(" ")
+    else:
+      c = n // 2 + 1
+      printnln(fib(c))
+  print()  
 
 #SOAL 8
-# alph = "ABC"
-# for y in crange(-4, 4):
-#   for x in crange(-4, 4):
-#     n = abs(x) if abs(x) > abs(y) else abs(y)
-#     n = 4 - n + 1
-#     if n % 2 == 0:
-#       i = n // 2 - 1
-#       printnln(alph[i])
-#     else:
-#       c = n // 2 + 1
-#       printnln(fib(c))
-#   print()  
+alph = "ABC"
+for y in crange(-4, 4):
+  for x in crange(-4, 4):
+    n = abs(x) if abs(x) > abs(y) else abs(y)
+    n = 4 - n + 1
+    if n % 2 == 0:
+      i = n // 2 - 1
+      printnln(alph[i])
+    else:
+      c = n // 2 + 1
+      printnln(fib(c))
+  print()  

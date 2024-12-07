@@ -147,29 +147,29 @@ print()
 
 #SEKEDAR NYOBA NYOBA AJA
 
-# for y in crange(1,9):
-#   for x in crange(1,9):
-#     if x == 1 or x == y or x == 9:
-#       printnln("*")
-#     else:
-#       printnln(" ")
+for y in crange(1,9):
+  for x in crange(1,9):
+    if x == 1 or x == y or x == 9:
+      printnln("*")
+    else:
+      printnln(" ")
   
-#   print()
+  print()
 
-# print()
-# print()
+print()
+print()
 
-# for y in crange(1,9):
-#   for x in crange(1,9):
-#     if x == 1 or y == 1 or x == 9 or y == 9:
-#       printnln("*")
-#     else:
-#       printnln(" ")
+for y in crange(1,9):
+  for x in crange(1,9):
+    if x == 1 or y == 1 or x == 9 or y == 9:
+      printnln("*")
+    else:
+      printnln(" ")
   
-#   print()
+  print()
 
-# print()
-# print()
+print()
+print()
 
 # for y in crange(1,9):
 #   for x in crange(1,9):
